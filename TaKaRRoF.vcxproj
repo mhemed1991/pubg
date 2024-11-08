@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{99785de4-2948-4b70-941c-ec6d9b20e91c}</ProjectGuid>
+    <RootNamespace>Loader</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Nexus VİP</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(LibraryPath);C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;./libs/curl/lib/;./libs/cryptopp/lib/;./libs/openssl/lib;./libs/</LibraryPath>
+    <IncludePath>$(IncludePath);C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;./libs/cryptopp/include;./libs/curl/include;./libs/openssl/include;./libs/json/include;$(IncludePath)</IncludePath>
+    <TargetName>d3d9</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath);C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;./libs/cryptopp/include;./libs/curl/include;./libs/openssl/include;./libs/json/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath);C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;./libs/curl/lib/;./libs/cryptopp/lib/;./libs/openssl/lib;./libs/;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>
+    </LinkIncremental>
+    <IncludePath>$(IncludePath);./DirectX-SDK/Include;./libs/cryptopp/include;./libs/curl/include;./libs/openssl/include;./libs/json/include;.\;./Discord SDK/src/rapidjson;./Discord SDK/include</IncludePath>
+    <LibraryPath>$(LibraryPath);./DirectX-SDK/Lib/x64;.\libs\curl\lib;.\libs\cryptopp\lib;.\libs\openssl\lib</LibraryPath>
+    <TargetName>TaKaRRoF Hack</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;WIZARDOP_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/source-charset:utf-8 /execution-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ForceFileOutput>Enabled</ForceFileOutput>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers />
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/source-charset:utf-8 /execution-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>HighestAvailable</UACExecutionLevel>
+      <ForceFileOutput>Enabled</ForceFileOutput>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <ForceFileOutput>Enabled</ForceFileOutput>
+      <AdditionalDependencies>./libs/cryptopp/lib/cryptopp-static.lib;./libs/curl/lib/libcurl.lib;./libs/openssl/lib/libcrypto.lib;./libs/openssl/lib/libssl.lib;./libs/zlib.lib;Normaliz.lib;Ws2_32.lib;Wldap32.lib;Crypt32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Aimbot.cpp" />
+    <ClCompile Include="Algorithm.cpp" />
+    <ClCompile Include="Data.cpp" />
+    <ClCompile Include="Discord SDK\src\connection_win.cpp" />
+    <ClCompile Include="Discord SDK\src\discord_register_win.cpp" />
+    <ClCompile Include="Discord SDK\src\discord_rpc.cpp" />
+    <ClCompile Include="Discord SDK\src\dllmain.cpp" />
+    <ClCompile Include="Discord SDK\src\rpc_connection.cpp" />
+    <ClCompile Include="Discord SDK\src\serialization.cpp" />
+    <ClCompile Include="DiscordR.cpp" />
+    <ClCompile Include="Driver.cpp" />
+    <ClCompile Include="DX11.cpp" />
+    <ClCompile Include="Esp.cpp" />
+    <ClCompile Include="Global.cpp" />
+    <ClCompile Include="ImGui\imgui.cpp" />
+    <ClCompile Include="ImGui\imgui_demo.cpp" />
+    <ClCompile Include="ImGui\imgui_draw.cpp" />
+    <ClCompile Include="ImGui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="ImGui\imgui_tables.cpp" />
+    <ClCompile Include="ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="Setting.cpp" />
+    <ClCompile Include="Utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Aimbot.h" />
+    <ClInclude Include="Airdrop.h" />
+    <ClInclude Include="AKM.h" />
+    <ClInclude Include="Algorithm.h" />
+    <ClInclude Include="AM556.h" />
+    <ClInclude Include="AM762.h" />
+    <ClInclude Include="auth.hpp" />
+    <ClInclude Include="AWM.h" />
+    <ClInclude Include="ConfigMain.h" />
+    <ClInclude Include="CONQ.h" />
+    <ClInclude Include="Data.h" />
+    <ClInclude Include="Discord SDK\src\backoff.h" />
+    <ClInclude Include="Discord SDK\src\connection.h" />
+    <ClInclude Include="Discord SDK\src\msg_queue.h" />
+    <ClInclude Include="Discord SDK\src\rpc_connection.h" />
+    <ClInclude Include="Discord SDK\src\serialization.h" />
+    <ClInclude Include="DiscordR.h" />
+    <ClInclude Include="Drawing.h" />
+    <ClInclude Include="Driver.h" />
+    <ClInclude Include="DX11.h" />
+    <ClInclude Include="EmuRepMem.h" />
+    <ClInclude Include="Esp.h" />
+    <ClInclude Include="flags\AD.h" />
+    <ClInclude Include="flags\AF.h" />
+    <ClInclude Include="flags\AG.h" />
+    <ClInclude Include="flags\AI.h" />
+    <ClInclude Include="flags\AL.h" />
+    <ClInclude Include="flags\AM.h" />
+    <ClInclude Include="flags\AO.h" />
+    <ClInclude Include="flags\AQ.h" />
+    <ClInclude Include="flags\AR.h" />
+    <ClInclude Include="flags\AS.h" />
+    <ClInclude Include="flags\AT.h" />
+    <ClInclude Include="flags\AU.h" />
+    <ClInclude Include="flags\AW.h" />
+    <ClInclude Include="flags\AX.h" />
+    <ClInclude Include="flags\AZ.h" />
+    <ClInclude Include="flags\BA.h" />
+    <ClInclude Include="flags\BB.h" />
+    <ClInclude Include="flags\BD.h" />
+    <ClInclude Include="flags\BE.h" />
+    <ClInclude Include="flags\BF.h" />
+    <ClInclude Include="flags\BG.h" />
+    <ClInclude Include="flags\BH.h" />
+    <ClInclude Include="flags\BI.h" />
+    <ClInclude Include="flags\BJ.h" />
+    <ClInclude Include="flags\BL.h" />
+    <ClInclude Include="flags\BM.h" />
+    <ClInclude Include="flags\BN.h" />
+    <ClInclude Include="flags\BO.h" />
+    <ClInclude Include="flags\BQ.h" />
+    <ClInclude Include="flags\BR.h" />
+    <ClInclude Include="flags\BS.h" />
+    <ClInclude Include="flags\BT.h" />
+    <ClInclude Include="flags\BV.h" />
+    <ClInclude Include="flags\BW.h" />
+    <ClInclude Include="flags\BY.h" />
+    <ClInclude Include="flags\BZ.h" />
+    <ClInclude Include="flags\CA.h" />
+    <ClInclude Include="flags\CC.h" />
+    <ClInclude Include="flags\CD.h" />
+    <ClInclude Include="flags\CF.h" />
+    <ClInclude Include="flags\CG.h" />
+    <ClInclude Include="flags\CH.h" />
+    <ClInclude Include="flags\CI.h" />
+    <ClInclude Include="flags\CK.h" />
+    <ClInclude Include="flags\CL.h" />
+    <ClInclude Include="flags\CM.h" />
+    <ClInclude Include="flags\CN.h" />
+    <ClInclude Include="flags\CO.h" />
+    <ClInclude Include="flags\CR.h" />
+    <ClInclude Include="flags\CU.h" />
+    <ClInclude Include="flags\CV.h" />
+    <ClInclude Include="flags\CW.h" />
+    <ClInclude Include="flags\CX.h" />
+    <ClInclude Include="flags\CY.h" />
+    <ClInclude Include="flags\CZ.h" />
+    <ClInclude Include="flags\DE.h" />
+    <ClInclude Include="flags\DJ.h" />
+    <ClInclude Include="flags\DK.h" />
+    <ClInclude Include="flags\DM.h" />
+    <ClInclude Include="flags\DO.h" />
+    <ClInclude Include="flags\DZ.h" />
+    <ClInclude Include="flags\EC.h" />
+    <ClInclude Include="flags\EE.h" />
+    <ClInclude Include="flags\EG.h" />
+    <ClInclude Include="flags\EH.h" />
+    <ClInclude Include="flags\ER.h" />
+    <ClInclude Include="flags\ES.h" />
+    <ClInclude Include="flags\ET.h" />
+    <ClInclude Include="flags\FI.h" />
+    <ClInclude Include="flags\FJ.h" />
+    <ClInclude Include="flags\FK.h" />
+    <ClInclude Include="flags\FM.h" />
+    <ClInclude Include="flags\FO.h" />
+    <ClInclude Include="flags\FR.h" />
+    <ClInclude Include="flags\GA.h" />
+    <ClInclude Include="flags\GB-ENG.h" />
+    <ClInclude Include="flags\GB-NIR.h" />
+    <ClInclude Include="flags\GB-SCT.h" />
+    <ClInclude Include="flags\GB-WLS.h" />
+    <ClInclude Include="flags\GB.h" />
+    <ClInclude Include="flags\GD.h" />
+    <ClInclude Include="flags\GE.h" />
+    <ClInclude Include="flags\GF.h" />
+    <ClInclude Include="flags\GG.h" />
+    <ClInclude Include="flags\GH.h" />
+    <ClInclude Include="flags\GI.h" />
+    <ClInclude Include="flags\GL.h" />
+    <ClInclude Include="flags\GM.h" />
+    <ClInclude Include="flags\GN.h" />
+    <ClInclude Include="flags\GP.h" />
+    <ClInclude Include="flags\GQ.h" />
+    <ClInclude Include="flags\GR.h" />
+    <ClInclude Include="flags\GS.h" />
+    <ClInclude Include="flags\GT.h" />
+    <ClInclude Include="flags\GU.h" />
+    <ClInclude Include="flags\GW.h" />
+    <ClInclude Include="flags\GY.h" />
+    <ClInclude Include="flags\HK.h" />
+    <ClInclude Include="flags\HM.h" />
+    <ClInclude Include="flags\HN.h" />
+    <ClInclude Include="flags\HR.h" />
+    <ClInclude Include="flags\HT.h" />
+    <ClInclude Include="flags\HU.h" />
+    <ClInclude Include="flags\ID.h" />
+    <ClInclude Include="flags\IE.h" />
+    <ClInclude Include="flags\IL.h" />
+    <ClInclude Include="flags\IM.h" />
+    <ClInclude Include="flags\IN.h" />
+    <ClInclude Include="flags\IO.h" />
+    <ClInclude Include="flags\IQ.h" />
+    <ClInclude Include="flags\IR.h" />
+    <ClInclude Include="flags\IS.h" />
+    <ClInclude Include="flags\IT.h" />
+    <ClInclude Include="flags\JE.h" />
+    <ClInclude Include="flags\JM.h" />
+    <ClInclude Include="flags\JO.h" />
+    <ClInclude Include="flags\JP.h" />
+    <ClInclude Include="flags\KE.h" />
+    <ClInclude Include="flags\KG.h" />
+    <ClInclude Include="flags\KH.h" />
+    <ClInclude Include="flags\KI.h" />
+    <ClInclude Include="flags\KM.h" />
+    <ClInclude Include="flags\KN.h" />
+    <ClInclude Include="flags\KP.h" />
+    <ClInclude Include="flags\KR.h" />
+    <ClInclude Include="flags\KW.h" />
+    <ClInclude Include="flags\KY.h" />
+    <ClInclude Include="flags\KZ.h" />
+    <ClInclude Include="flags\LA.h" />
+    <ClInclude Include="flags\LB.h" />
+    <ClInclude Include="flags\LC.h" />
+    <ClInclude Include="flags\LI.h" />
+    <ClInclude Include="flags\LK.h" />
+    <ClInclude Include="flags\LR.h" />
+    <ClInclude Include="flags\LS.h" />
+    <ClInclude Include="flags\LT.h" />
+    <ClInclude Include="flags\LU.h" />
+    <ClInclude Include="flags\LV.h" />
+    <ClInclude Include="flags\LY.h" />
+    <ClInclude Include="flags\MA.h" />
+    <ClInclude Include="flags\MC.h" />
+    <ClInclude Include="flags\MD.h" />
+    <ClInclude Include="flags\ME.h" />
+    <ClInclude Include="flags\MF.h" />
+    <ClInclude Include="flags\MG.h" />
+    <ClInclude Include="flags\MH.h" />
+    <ClInclude Include="flags\MK.h" />
+    <ClInclude Include="flags\ML.h" />
+    <ClInclude Include="flags\MM.h" />
+    <ClInclude Include="flags\MN.h" />
+    <ClInclude Include="flags\MO.h" />
+    <ClInclude Include="flags\MP.h" />
+    <ClInclude Include="flags\MQ.h" />
+    <ClInclude Include="flags\MR.h" />
+    <ClInclude Include="flags\MS.h" />
+    <ClInclude Include="flags\MT.h" />
+    <ClInclude Include="flags\MU.h" />
+    <ClInclude Include="flags\MV.h" />
+    <ClInclude Include="flags\MW.h" />
+    <ClInclude Include="flags\MX.h" />
+    <ClInclude Include="flags\MY.h" />
+    <ClInclude Include="flags\MZ.h" />
+    <ClInclude Include="flags\NA.h" />
+    <ClInclude Include="flags\NC.h" />
+    <ClInclude Include="flags\NE.h" />
+    <ClInclude Include="flags\NF.h" />
+    <ClInclude Include="flags\NG.h" />
+    <ClInclude Include="flags\NI.h" />
+    <ClInclude Include="flags\NL.h" />
+    <ClInclude Include="flags\NO.h" />
+    <ClInclude Include="flags\NP.h" />
+    <ClInclude Include="flags\NR.h" />
+    <ClInclude Include="flags\NU.h" />
+    <ClInclude Include="flags\NZ.h" />
+    <ClInclude Include="flags\OM.h" />
+    <ClInclude Include="flags\PA.h" />
+    <ClInclude Include="flags\PE.h" />
+    <ClInclude Include="flags\PF.h" />
+    <ClInclude Include="flags\PG.h" />
+    <ClInclude Include="flags\PH.h" />
+    <ClInclude Include="flags\PK.h" />
+    <ClInclude Include="flags\PL.h" />
+    <ClInclude Include="flags\PM.h" />
+    <ClInclude Include="flags\PN.h" />
+    <ClInclude Include="flags\PR.h" />
+    <ClInclude Include="flags\PS.h" />
+    <ClInclude Include="flags\PT.h" />
+    <ClInclude Include="flags\PW.h" />
+    <ClInclude Include="flags\PY.h" />
+    <ClInclude Include="flags\QA.h" />
+    <ClInclude Include="flags\RE.h" />
+    <ClInclude Include="flags\RO.h" />
+    <ClInclude Include="flags\RS.h" />
+    <ClInclude Include="flags\RU.h" />
+    <ClInclude Include="flags\RW.h" />
+    <ClInclude Include="flags\SA.h" />
+    <ClInclude Include="flags\SB.h" />
+    <ClInclude Include="flags\SC.h" />
+    <ClInclude Include="flags\SD.h" />
+    <ClInclude Include="flags\SE.h" />
+    <ClInclude Include="flags\SG.h" />
+    <ClInclude Include="flags\SH.h" />
+    <ClInclude Include="flags\SI.h" />
+    <ClInclude Include="flags\SJ.h" />
+    <ClInclude Include="flags\SK.h" />
+    <ClInclude Include="flags\SL.h" />
+    <ClInclude Include="flags\SM.h" />
+    <ClInclude Include="flags\SN.h" />
+    <ClInclude Include="flags\SO.h" />
+    <ClInclude Include="flags\SR.h" />
+    <ClInclude Include="flags\SS.h" />
+    <ClInclude Include="flags\ST.h" />
+    <ClInclude Include="flags\SV.h" />
+    <ClInclude Include="flags\SX.h" />
+    <ClInclude Include="flags\SY.h" />
+    <ClInclude Include="flags\SZ.h" />
+    <ClInclude Include="flags\TC.h" />
+    <ClInclude Include="flags\TD.h" />
+    <ClInclude Include="flags\TF.h" />
+    <ClInclude Include="flags\TG.h" />
+    <ClInclude Include="flags\TH.h" />
+    <ClInclude Include="flags\TJ.h" />
+    <ClInclude Include="flags\TK.h" />
+    <ClInclude Include="flags\TL.h" />
+    <ClInclude Include="flags\TM.h" />
+    <ClInclude Include="flags\TN.h" />
+    <ClInclude Include="flags\TO.h" />
+    <ClInclude Include="flags\TR.h" />
+    <ClInclude Include="flags\TT.h" />
+    <ClInclude Include="flags\TV.h" />
+    <ClInclude Include="flags\TW.h" />
+    <ClInclude Include="flags\TZ.h" />
+    <ClInclude Include="flags\UA.h" />
+    <ClInclude Include="flags\UG.h" />
+    <ClInclude Include="flags\UM.h" />
+    <ClInclude Include="flags\US.h" />
+    <ClInclude Include="flags\UY.h" />
+    <ClInclude Include="flags\UZ.h" />
+    <ClInclude Include="flags\VA.h" />
+    <ClInclude Include="flags\VC.h" />
+    <ClInclude Include="flags\VE.h" />
+    <ClInclude Include="flags\VG.h" />
+    <ClInclude Include="flags\VI.h" />
+    <ClInclude Include="flags\VN.h" />
+    <ClInclude Include="flags\VU.h" />
+    <ClInclude Include="flags\WF.h" />
+    <ClInclude Include="flags\WS.h" />
+    <ClInclude Include="flags\XK.h" />
+    <ClInclude Include="flags\YE.h" />
+    <ClInclude Include="flags\YT.h" />
+    <ClInclude Include="flags\ZA.h" />
+    <ClInclude Include="flags\ZM.h" />
+    <ClInclude Include="flags\ZW.h" />
+    <ClInclude Include="FlareAmmo.h" />
+    <ClInclude Include="FlareGun.h" />
+    <ClInclude Include="GasCan.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="Granade.h" />
+    <ClInclude Include="icon.h" />
+    <ClInclude Include="iconcpp.h" />
+    <ClInclude Include="ImGui\imconfig.h" />
+    <ClInclude Include="ImGui\imgui.h" />
+    <ClInclude Include="ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="ImGui\imgui_internal.h" />
+    <ClInclude Include="ImGui\imstb_rectpack.h" />
+    <ClInclude Include="ImGui\imstb_textedit.h" />
+    <ClInclude Include="ImGui\imstb_truetype.h" />
+    <ClInclude Include="Includes.h" />
+    <ClInclude Include="KAR98K.h" />
+    <ClInclude Include="LOGO.h" />
+    <ClInclude Include="LOGOM.h" />
+    <ClInclude Include="M24.h" />
+    <ClInclude Include="M416.h" />
+    <ClInclude Include="M762.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Molo.h" />
+    <ClInclude Include="notification\fa_solid_900.h" />
+    <ClInclude Include="notification\font_awesome_5.h" />
+    <ClInclude Include="notification\imgui_notify.h" />
+    <ClInclude Include="Offset.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="RAINBG.h" />
+    <ClInclude Include="Scanner.h" />
+    <ClInclude Include="Setting.h" />
+    <ClInclude Include="SimpleIni.h" />
+    <ClInclude Include="skStr.h" />
+    <ClInclude Include="Smoke.h" />
+    <ClInclude Include="StreamMode.h" />
+    <ClInclude Include="tahoma.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="warrior.h" />
+    <ClInclude Include="xorstr.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TaKaRRoF.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libcurl.lib" />
+    <Library Include="library_x64.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

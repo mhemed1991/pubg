@@ -1,0 +1,1085 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{6a37481d-5dbf-4cfe-a288-f94eba240279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global">
+      <UniqueIdentifier>{3384643e-ee25-4313-b6cf-ec2043bd3db9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Miscellaneous">
+      <UniqueIdentifier>{ff83bb8f-6e16-41a8-a91f-2e42ac8f7efd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Miscellaneous\Driver">
+      <UniqueIdentifier>{72eb35fc-e7e0-42bb-a3c9-59a010c34baf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Miscellaneous\Utility">
+      <UniqueIdentifier>{5e484c57-c5e8-4972-afe9-61f2712f5072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{69a3d2ba-0af8-4204-8745-188660eeb9f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm">
+      <UniqueIdentifier>{bbbb869b-8f05-435b-ab05-fa2e12e58cf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setting">
+      <UniqueIdentifier>{a035e8ea-1a21-4be9-aece-ea21be468f68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack">
+      <UniqueIdentifier>{3df41ab0-4d0f-4230-96a6-aa148e07a97a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Esp">
+      <UniqueIdentifier>{3807cbfa-b2ed-4f7b-8f33-ef3fa26a29ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{cc658350-f0c9-4f04-aa08-83be1856e05f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Icons">
+      <UniqueIdentifier>{ba4bf08e-5caf-48fe-b853-476a1f6256eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{4a6b8a96-a5ab-4603-b951-9bf2e2bbc638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="flags">
+      <UniqueIdentifier>{876ad154-5c5d-475e-8959-e711b9164199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Memory">
+      <UniqueIdentifier>{f8ef8a89-9b59-47e1-bb47-7bb3bf2e2e95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hack\Memory\Aimbot">
+      <UniqueIdentifier>{5f851694-8176-4175-83dc-87a264ed7f9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api">
+      <UniqueIdentifier>{ab84796c-bd4a-4804-bacb-948cb98a773d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Drawing">
+      <UniqueIdentifier>{836997bf-fadc-4330-9760-33c0f59d49ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Drawing\DX11">
+      <UniqueIdentifier>{62991064-97dc-4bcd-9eac-8b9502a735fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="notification">
+      <UniqueIdentifier>{510ca7f1-1e22-417a-a454-def53d59e213}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="DX11.cpp">
+      <Filter>Common\Drawing\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver.cpp">
+      <Filter>Miscellaneous\Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.cpp">
+      <Filter>Miscellaneous\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Data.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithm.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Setting.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="Esp.cpp">
+      <Filter>Hack\Esp</Filter>
+    </ClCompile>
+    <ClCompile Include="DiscordR.cpp" />
+    <ClCompile Include="Discord SDK\src\connection_win.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Discord SDK\src\discord_register_win.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Discord SDK\src\discord_rpc.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Discord SDK\src\dllmain.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Discord SDK\src\rpc_connection.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Discord SDK\src\serialization.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>Hack\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Aimbot.cpp">
+      <Filter>Hack\Memory\Aimbot</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_demo.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx11.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_tables.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Includes.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Offset.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11.h">
+      <Filter>Common\Drawing\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver.h">
+      <Filter>Miscellaneous\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Miscellaneous\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Data.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithm.h">
+      <Filter>Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Setting.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="Esp.h">
+      <Filter>Hack\Esp</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Miscellaneous\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanner.h">
+      <Filter>Miscellaneous\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="EmuRepMem.h">
+      <Filter>Miscellaneous\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleIni.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="auth.hpp" />
+    <ClInclude Include="skStr.h" />
+    <ClInclude Include="Granade.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="Smoke.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="Molo.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigMain.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamMode.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawing.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="FlareGun.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="FlareAmmo.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="Airdrop.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="DiscordR.h" />
+    <ClInclude Include="Discord SDK\src\backoff.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Discord SDK\src\connection.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Discord SDK\src\msg_queue.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Discord SDK\src\rpc_connection.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Discord SDK\src\serialization.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\AD.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\AF.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\AG.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\AI.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\AL.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\AM.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\AO.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\AQ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\AR.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\AS.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\AT.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\AU.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\AW.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\AX.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\AZ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BA.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BB.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BD.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BE.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BF.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BG.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BH.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BI.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BJ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BL.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BM.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BN.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BO.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BQ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BR.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BS.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BT.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BV.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BW.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BY.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\BZ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CA.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CC.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CD.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CF.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CG.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CH.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CI.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CK.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CL.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CM.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CN.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CO.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CR.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CU.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CV.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CW.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CX.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CY.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\CZ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\DE.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\DJ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\DK.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\DM.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\DO.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\DZ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\EC.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\EE.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\EG.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\EH.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\ER.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\ES.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\ET.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\FI.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\FJ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\FK.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\FM.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\FO.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\FR.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GA.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GB.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GB-ENG.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GB-NIR.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GB-SCT.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GB-WLS.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GD.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GE.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GF.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GG.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GH.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GI.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GL.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GM.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GN.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GP.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GQ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GR.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GS.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GT.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GU.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GW.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\GY.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\HK.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\HM.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\HN.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\HR.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\HT.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\HU.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\ID.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\IE.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\IL.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\IM.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\IN.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\IO.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\IQ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\IR.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\IS.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\IT.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\JE.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\JM.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\JO.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\JP.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\KE.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\KG.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\KH.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\KI.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\KM.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\KN.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\KP.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\KR.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\KW.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\KY.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\KZ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\LA.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\LB.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\LC.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\LI.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\LK.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\LR.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\LS.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\LT.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\LU.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\LV.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\LY.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MA.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MC.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MD.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\ME.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MF.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MG.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MH.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MK.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\ML.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MM.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MN.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MO.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MP.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MQ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MR.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MS.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MT.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MU.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MV.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MW.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MX.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MY.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\MZ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\NA.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\NC.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\NE.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\NF.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\NG.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\NI.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\NL.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\NO.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\NP.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\NR.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\NU.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\NZ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\OM.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\PA.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\PE.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\PF.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\PG.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\PH.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\PK.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\PL.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\PM.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\PN.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\PR.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\PS.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\PT.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\PW.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\PY.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\QA.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\RE.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\RO.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\RS.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\RU.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\RW.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SA.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SB.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SC.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SD.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SE.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SG.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SH.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SI.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SJ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SK.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SL.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SM.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SN.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SO.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SR.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SS.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\ST.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SV.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SX.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SY.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\SZ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\TC.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\TD.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\TF.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\TG.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\TH.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\TJ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\TK.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\TL.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\TM.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\TN.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\TO.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\TR.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\TT.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\TV.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\TW.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\TZ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\UA.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\UG.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\UM.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\US.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\UY.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\UZ.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\VA.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\VC.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\VE.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\VG.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\VI.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\VN.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\VU.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\WF.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\WS.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\XK.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\YE.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\YT.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\ZA.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\ZM.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="flags\ZW.h">
+      <Filter>flags</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Hack\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Aimbot.h">
+      <Filter>Hack\Memory\Aimbot</Filter>
+    </ClInclude>
+    <ClInclude Include="xorstr.hpp" />
+    <ClInclude Include="warrior.h" />
+    <ClInclude Include="GasCan.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="LOGO.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="LOGOM.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="AM556.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="AM762.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="AKM.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="M416.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="M762.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="AWM.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="KAR98K.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="M24.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="CONQ.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="icon.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="iconcpp.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="RAINBG.h">
+      <Filter>Icons</Filter>
+    </ClInclude>
+    <ClInclude Include="tahoma.h">
+      <Filter>notification</Filter>
+    </ClInclude>
+    <ClInclude Include="notification\fa_solid_900.h">
+      <Filter>notification</Filter>
+    </ClInclude>
+    <ClInclude Include="notification\font_awesome_5.h">
+      <Filter>notification</Filter>
+    </ClInclude>
+    <ClInclude Include="notification\imgui_notify.h">
+      <Filter>notification</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx11.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_win32.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TaKaRRoF.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libcurl.lib" />
+    <Library Include="library_x64.lib" />
+  </ItemGroup>
+</Project>
